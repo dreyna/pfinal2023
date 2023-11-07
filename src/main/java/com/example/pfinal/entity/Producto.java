@@ -28,13 +28,10 @@ public class Producto {
 	@Column(name = "nombre")
 	private String nombre;
 	@Column(name = "precio")
-	@NotBlank 
 	private double precio;
 	@Column(name = "cantidad")
-	@NotBlank 
 	private int cantidad;
-	@Column(name = "estado")
-	@NotBlank    
+	@Column(name = "estado")  
     private char estado;
 	@ManyToOne
     @JoinColumn(name="categoria_id", nullable = false)
